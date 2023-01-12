@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Email</title>
+</head>
+<body>
+    <h1>Enviar um email automático</h1>
+    <hr>
+    <p>
+        <h2>Entre com uma chave!</h2>
+        <form id="form-requisicao">
+        <p>
+            <label for="ichave">Chave Toker</label>
+            <input type="int" name="Chave" id="ichave" placeholder="Chave Toker" required>
+        </p>
+
+        <p>
+            <label for="iassunto">Assunto do Email</label>
+            <input type="str" name="assunto" id="iassunto" placeholder="Assunto do Email" required>
+        </p>
+
+        <p><label for="itexto">Texto do Email</label>
+            <input type="str" name="texto" id="itexto" placeholder="Texto do Email" required>
+        </p>
+
+        <p>
+            <label for="iendereco">Endereço do Destinatário</label>
+            <input type="email" name="endereco" id="iendereco" placeholder="Endereço do Email" required>
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        </form>
+    </p>
+    
+</body>
+</html>
