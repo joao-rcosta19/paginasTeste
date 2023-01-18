@@ -5,9 +5,7 @@ def conectar():
     try:
         global con
         con = mysql.connector.connect(host='localhost', database='projeto_email', user='root', password='')
-
-        #10.0.0.110
-        
+     
     except Error as e:
         print("Erro de conexão")
 
@@ -96,5 +94,3 @@ def buscarsituacao(email, tabela, nomeColuna, situacao):
         print("Erro ao acessar tabela MySQL: {}".format(e))
     finally:
         close()
-#print(buscar(789456123, "instituicao", "chave_toker"))
-#inserindoEmail("joaocostacametá@gmail.com", 789456123)

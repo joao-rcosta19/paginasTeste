@@ -20,4 +20,10 @@ lista: List[requisicaoEmail] = []
 @app.post('/listar')
 def criar_requisicao(requisicaoEmail: requisicaoEmail):
     lista.append(requisicaoEmail)
-    return  lista
+    return lista
+
+@app.get('/listar')
+def listar_emaail():
+    return "Legal, conectou!"
+
+
